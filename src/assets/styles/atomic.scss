@@ -1,0 +1,57 @@
+.fl {
+    display: flex;
+    align-items: center;
+}
+
+.fl-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+.mr-24 {
+    margin-right: 24px;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+.mb-24 {
+    margin-bottom: 24px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+/* перебивание стилей element-ui */
+#app .el-tabs__item {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #adafaf;
+    &.is-active {
+        color: #393e46;
+    }
+}
+
+.date .el-picker-panel__icon-btn.el-icon-d-arrow-left,
+.date .el-picker-panel__icon-btn.el-icon-d-arrow-right {
+    display: none;
+}
+.date .el-picker-panel__icon-btn.el-icon-arrow-left,
+.date .el-picker-panel__icon-btn.el-icon-arrow-right {
+    font-size: 18px;
+    font-weight: 700;
+    color: #014fce;
+    &.is-disabled {
+        color: #f2f3f7;
+    }
+}
+.date .el-picker-panel__icon-btn {
+    margin-top: 4px;
+}
+#app .el-input__inner {
+    height: 44px;
+}

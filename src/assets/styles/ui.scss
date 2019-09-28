@@ -1,0 +1,41 @@
+.user-photo-wrap {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid var(--grey);
+    background-color: var(--white);
+    border-radius: 100%;
+}
+
+.arrow {
+    display: inline-block;
+    border: solid var(--info);
+    border-width: 0 2px 2px 0;
+    border-radius: 0px 2px 0px 2px;
+    padding: 3px;
+    transition: .7s;
+    &_right {
+        transform: rotate(-45deg);
+        transition: .7s;
+    }
+    &_left {
+        transform: rotate(135deg);
+        transition: .7s;
+    }
+    &_up {
+        transform: rotate(-135deg);
+        transition: .7s;
+    }
+    &_down {
+        transform: rotate(45deg) translate(-2px, -2px);
+        transition: .7s;
+    }
+    &_dark {
+        border: solid var(--black);
+        border-width: 0 2px 2px 0;
+    }
+}

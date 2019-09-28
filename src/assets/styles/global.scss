@@ -1,0 +1,28 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--softgrey);
+    color: var(--black);
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+.page {
+    padding: 32px 0;
+}
+.page-with-crumbs {
+    padding: 16px 0 32px 0;
+}
+
+.btn-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 16px 20px;
+    border-bottom-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    background: var(--softgrey);
+}

@@ -1,0 +1,29 @@
+/* name="fade" mode="out-in" for Transition tag */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .2s ease-in-out;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+/* name="out-left" mode="out-in" for Transition tag */
+.out-left-enter-active,
+.out-left-leave-active,
+.out-right-enter-active,
+.out-right-leave-active {
+    transition: all 0.5s ease;
+}
+
+.out-left-leave-to,
+.out-right-enter {
+    position: absolute;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.out-left-enter,
+.out-right-leave-to {
+    position: absolute;
+    transform: translateX(100%);
+    opacity: 0;
+}
